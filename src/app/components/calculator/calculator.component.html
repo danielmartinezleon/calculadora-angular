@@ -1,0 +1,34 @@
+<div class="calculator card">
+    <div class="calculator-screen">
+      <div class="real-time-calculation bd-highlight md-3">{{ realTimeCalculation }}
+        <input class="mt-auto" type="text" [value]="displayValue" disabled />
+      </div>
+      
+    </div>
+  
+    <div class="calculator-keys row">
+        
+  
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(7)">7</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(8)">8</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(9)">9</button>
+      <button type="button" class="operator btn btn-info" (click)="sumar()">+</button>
+  
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(4)">4</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(5)">5</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(6)">6</button>
+      <button type="button" class="operator btn btn-info" (click)="restar()">-</button>
+  
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(1)">1</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(2)">2</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(3)">3</button>
+      <button type="button" class="operator btn btn-info" (click)="multiplicar()">&times;</button>
+
+  
+      <button type="button" class="btn btn-light waves-effect" (click)="addNum(0)">0</button>
+      <button type="button" class="btn btn-light waves-effect" (click)="calculate()">=</button>
+      <button type="button" class="btn btn-danger waves-effect" (click)="reset()">C</button>
+      <button type="button" class="operator btn btn-info" (click)="dividir()">&divide;</button>
+
+    </div>
+  </div>
